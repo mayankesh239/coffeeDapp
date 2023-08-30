@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+
+.center {
+  width: 40%;
+  margin: auto;
+  /* margin-left: 25vmax; */
+  padding-left: 10vmax;
+  padding-top: 2vmax;
+  padding-bottom: 4vmax;
+  /* padding: 50px 50px; */
+  /* background: #7c422d4b; */
+  /* border: solid #E3E3E3 1px; */
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transitions for box-shadow and transform */
+
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.425); 
+  background-image: linear-gradient(#7c422d73, #7c422d6f);
+}
+
+.center:hover{
+  /* transition: box-shadow 0.3s ease; */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(4px); 
+}
+
+.center h1 {
+  font-size: 1.5em;
+  border-left: 5px solid #7c422d;
+  padding: 5px;
+  color: #000;
+  letter-spacing: 5px;  
+  margin-bottom: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 60%;
+  height: 20px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 0.9em;
+  transition: 0.5s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 0.9em;
+}
+.center .inputbox [type="submit"] {
+  width: 80%;
+  background: #7c422d;
+  color: #fff;
+  border: #fff;
+  font-size:1em;
+  margin-left: 3vmax;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.425); 
+}
+.center .inputbox:hover [type="submit"] {
+  background: linear-gradient(45deg, #7c422ddd, #7c422dcc);
+}

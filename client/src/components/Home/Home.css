@@ -1,0 +1,27 @@
+.home{
+    height: 100vmin;
+    background-image: url("../../coffee.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    color: rgb(0, 0, 0);
+    color: #7c422dcd;
+    font-size: 1.8vmax;
+    font-weight: bolder;
+    /* margin-top: 1vmax; */
+}
+
+.home > div{
+    color: rgb(34, 27, 27);
+    font-size: 1.7vmax;
+    margin-top: 1.8vmax;
+}

@@ -1,0 +1,12 @@
+.container-fluid{
+margin: 10vmax;
+transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transitions for box-shadow and transform */
+
+box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.425); 
+}
+
+.container-fluid:hover{
+    /* transition: box-shadow 0.3s ease; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(4px); 
+  }
