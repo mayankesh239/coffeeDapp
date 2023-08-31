@@ -1,77 +1,66 @@
-import SimpleReactFooter from "simple-react-footer";
-// import "./footer.scss"
-// for documentation of footer refer https://www.npmjs.com/package/simple-react-footer
+import React from "react";
+import {
+Box,
+Container,
+Row,
+Column,
+FooterLink,
+Heading,
+} from "./FooterStyles";
 
-const description = "CafeChain - Where Blockchain Meets Your Daily Brew! Experience the future of coffee shopping with secure transactions and traceable beans. Sip, savor, and support fair-trade practices, one blockchain-powered cup at a time.";
-const title = "Contact Us";
-const columns = [
-    {
-        title: "Resources",
-        resources: [
-            {
-                name: "About",
-                link: "/about"
-            },
-            {
-                name: "Careers",
-                link: "/careers"
-            },
-            {
-                name: "Contact",
-                link: "/contact"
-            },
-            {
-                name: "Admin",
-                link: "/admin"
-            }
-        ]
-    },
-    {
-        title: "Legal",
-        resources: [
-            {
-                name: "Privacy",
-                link: "/privacy"
-            },
-            {
-                name: "Terms",
-                link: "/terms"
-            }
-        ]
-    },
-    {
-        title: "Visit",
-        resources: [
-            {
-                name: "Locations",
-                link: "/locations"
-            },
-            {
-                name: "Culture",
-                link: "/culture"
-            }
-        ]
-    }
-];
 const Footer = () => {
-    return (
-            <SimpleReactFooter
-                description={description}
-                title={title}
-                columns={columns}
-                linkedin="mayankesh-jha-15446b206"
-                facebook="fluffy_cat_on_fb"
-                twitter="fluffy_cat_on_twitter"
-                instagram="fluffy_cat_live"
-                youtube="UCFt6TSF464J8K82xeA?"
-                pinterest="fluffy_cats_collections"
-                copyright="Mayankesh Jha"
-                iconColor="white"
-                backgroundColor="#7c422d"
-                fontColor="white"
-                copyrightColor="darkgrey"
-            />
-    )
-}
-
-export default Footer
+return (
+	<Box>
+    <h2 style={{ color: "white",
+				textAlign: "center",
+				marginTop: "-60px" }}>CafeChain - Where Blockchain Meets Your Daily Brew!</h2>
+	<Container>
+		<Row>
+		<Column>
+			<Heading>About Us</Heading>
+			<FooterLink href="#">Aim</FooterLink>
+			<FooterLink href="#">Vision</FooterLink>
+			<FooterLink href="#">Feedback</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Services</Heading>
+			<FooterLink href="#">Customer Support</FooterLink>
+			<FooterLink href="#">Subscription Services</FooterLink>
+			<FooterLink href="#">Partnership Inquiries</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Contact Us</Heading>
+			<FooterLink href="#">Live Chat Support</FooterLink>
+			<FooterLink href="#">Compliance & Legal</FooterLink>
+			<FooterLink href="#">Partnership Inquiries</FooterLink>
+		</Column>
+		<Column>
+			<Heading>Social Media</Heading>
+			<FooterLink href="#">
+			<i className="fab fa-facebook-f">
+				<span style={{ marginLeft: "10px" }}>
+				Facebook
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-instagram">
+				<span style={{ marginLeft: "10px" }}>
+				Instagram
+				</span>
+			</i>
+			</FooterLink>
+			<FooterLink href="#">
+			<i className="fab fa-youtube">
+				<span style={{ marginLeft: "10px" }}>
+				Youtube
+				</span>
+			</i>
+			</FooterLink>
+		</Column>
+		</Row>
+	</Container>
+	</Box>
+);
+};
+export default Footer;
